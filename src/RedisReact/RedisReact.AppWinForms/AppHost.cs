@@ -34,8 +34,7 @@ namespace RedisReact.AppWinForms
         {
             JsConfig.EmitCamelCaseNames = true;
 
-            container.Register<IRedisClientsManager>(c =>
-                new RedisManagerPool("127.0.0.1"));
+            container.Register<IRedisClientsManager>(c => new RedisManagerPool("127.0.0.1"));
 
             SetConfig(new HostConfig
             {
